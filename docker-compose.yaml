@@ -4,6 +4,7 @@ services:
     image: 'postgres:latest'
     container_name: 'pg-nest'
     environment:
+      - POSTGRES_DB=mydb
       - POSTGRES_PASSWORD=randompassword
     ports:
       - '5432:5432'
