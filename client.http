@@ -1,0 +1,57 @@
+POST http://localhost:3000/authors
+Content-Type: application/json
+
+{
+  "name": "John Doe"
+}
+
+### 
+
+GET http://localhost:3000/authors
+
+###
+
+GET http://localhost:3000/authors/77f0038c-fb96-491b-9964-08ec5c5aca78
+
+###
+
+PATCH http://localhost:3000/authors/1a4ff246-378d-415d-bfab-885f571cd274
+Content-Type: application/json
+
+{
+  "name": "Jane Doe"
+}
+
+###
+
+DELETE http://localhost:3000/authors/1a4ff246-378d-415d-bfab-885f571cd274
+
+###
+
+POST http://localhost:3000/genres
+Content-Type: application/json
+
+{
+  "name": "Adventure"
+}
+
+### 
+
+GET http://localhost:3000/genres
+
+###
+
+GET http://localhost:3000/genres/fe6978df-7a27-4188-9b2a-58cf21cd9f34
+
+###
+
+PATCH http://localhost:3000/genres/fe6978df-7a27-4188-9b2a-58cf21cd9f34
+Content-Type: application/json
+
+{
+  "name": "Drama"
+}
+
+###
+
+DELETE http://localhost:3000/genres/fe6978df-7a27-4188-9b2a-58cf21cd9f34
