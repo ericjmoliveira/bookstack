@@ -5,9 +5,10 @@ import { PrismaService } from './prisma/prisma.service';
 import { AuthorsModule } from './authors/authors.module';
 import { GenresModule } from './genres/genres.module';
 import { BooksModule } from './books/books.module';
+import { BorrowersModule } from './borrowers/borrowers.module';
 
 @Module({
-  imports: [AuthorsModule, GenresModule, BooksModule],
+  imports: [AuthorsModule, GenresModule, BooksModule, BorrowersModule],
   controllers: [AppController],
   providers: [AppService, PrismaService]
 })
