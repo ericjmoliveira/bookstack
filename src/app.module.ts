@@ -6,9 +6,10 @@ import { AuthorsModule } from './authors/authors.module';
 import { GenresModule } from './genres/genres.module';
 import { BooksModule } from './books/books.module';
 import { BorrowersModule } from './borrowers/borrowers.module';
+import { TransactionsModule } from './transactions/transactions.module';
 
 @Module({
-  imports: [AuthorsModule, GenresModule, BooksModule, BorrowersModule],
+  imports: [AuthorsModule, GenresModule, BooksModule, BorrowersModule, TransactionsModule],
   controllers: [AppController],
   providers: [AppService, PrismaService]
 })
