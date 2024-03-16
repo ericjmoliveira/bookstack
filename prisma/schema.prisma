@@ -51,12 +51,12 @@ model Borrower {
 }
 
 model Transaction {
-  id           String   @id @default(uuid())
+  id           String    @id @default(uuid())
   bookId       String?
   borrowerId   String?
   borrowPeriod Int
-  borrowDate   DateTime @default(now()) @map("borrow_date")
-  returnDate   DateTime @map("return_date")
+  borrowDate   DateTime  @default(now()) @map("borrow_date")
+  returnDate   DateTime? @map("return_date")
 
   book     Book?     @relation(fields: [bookId], references: [id])
   borrower Borrower? @relation(fields: [borrowerId], references: [id])
