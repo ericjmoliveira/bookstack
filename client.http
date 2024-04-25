@@ -1,4 +1,4 @@
-POST https://bookstack-8j1h0znbc-ericjmoliveiras-projects.vercel.app/authors
+POST http://localhost:3000/api/authors
 Content-Type: application/json
 
 {
@@ -7,15 +7,15 @@ Content-Type: application/json
 
 ### 
 
-GET https://bookstack-8j1h0znbc-ericjmoliveiras-projects.vercel.app/authors
+GET http://localhost:3000/api/authors
 
 ###
 
-GET https://bookstack-8j1h0znbc-ericjmoliveiras-projects.vercel.app/authors/:id
+GET http://localhost:3000/api/authors/:id
 
 ###
 
-PATCH https://bookstack-8j1h0znbc-ericjmoliveiras-projects.vercel.app/authors/:id
+PATCH http://localhost:3000/api/authors/:id
 Content-Type: application/json
 
 {
@@ -24,11 +24,11 @@ Content-Type: application/json
 
 ###
 
-DELETE https://bookstack-8j1h0znbc-ericjmoliveiras-projects.vercel.app/authors/:id
+DELETE http://localhost:3000/api/authors/:id
 
 ###
 
-POST https://bookstack-8j1h0znbc-ericjmoliveiras-projects.vercel.app/genres
+POST http://localhost:3000/api/genres
 Content-Type: application/json
 
 {
@@ -37,15 +37,15 @@ Content-Type: application/json
 
 ### 
 
-GET https://bookstack-8j1h0znbc-ericjmoliveiras-projects.vercel.app/genres
+GET http://localhost:3000/api/genres
 
 ###
 
-GET https://bookstack-8j1h0znbc-ericjmoliveiras-projects.vercel.app/genres/:id
+GET http://localhost:3000/api/genres/:id
 
 ###
 
-PATCH https://bookstack-8j1h0znbc-ericjmoliveiras-projects.vercel.app/genres/:id
+PATCH http://localhost:3000/api/genres/:id
 Content-Type: application/json
 
 {
@@ -54,15 +54,15 @@ Content-Type: application/json
 
 ###
 
-DELETE https://bookstack-8j1h0znbc-ericjmoliveiras-projects.vercel.app/genres/:id
+DELETE http://localhost:3000/api/genres/:id
 
 ###
 
-GET https://bookstack-8j1h0znbc-ericjmoliveiras-projects.vercel.app/books
+GET http://localhost:3000/api/books
 
 ###
 
-POST https://bookstack-8j1h0znbc-ericjmoliveiras-projects.vercel.app/books
+POST http://localhost:3000/api/books
 Content-Type: application/json
 
 {
@@ -76,12 +76,12 @@ Content-Type: application/json
 
 ###
 
-GET https://bookstack-8j1h0znbc-ericjmoliveiras-projects.vercel.app/books/f2592e8b-87ce-491b-aa77-6dc832ec0818
+GET http://localhost:3000/api/books/f2592e8b-87ce-491b-aa77-6dc832ec0818
 
 
 ###
 
-PATCH https://bookstack-8j1h0znbc-ericjmoliveiras-projects.vercel.app/books/f2592e8b-87ce-491b-aa77-6dc832ec0818
+PATCH http://localhost:3000/api/books/f2592e8b-87ce-491b-aa77-6dc832ec0818
 Content-Type: application/json
 
 {
@@ -90,15 +90,15 @@ Content-Type: application/json
 
 ###
 
-DELETE https://bookstack-8j1h0znbc-ericjmoliveiras-projects.vercel.app/books/f2592e8b-87ce-491b-aa77-6dc832ec0818
+DELETE http://localhost:3000/api/books/f2592e8b-87ce-491b-aa77-6dc832ec0818
 
 ###
 
-GET https://bookstack-8j1h0znbc-ericjmoliveiras-projects.vercel.app/borrowers
+GET http://localhost:3000/api/borrowers
 
 ###
 
-POST https://bookstack-8j1h0znbc-ericjmoliveiras-projects.vercel.app/borrowers
+POST http://localhost:3000/api/borrowers
 Content-Type: application/json
 
 {
@@ -108,11 +108,11 @@ Content-Type: application/json
 
 ###
 
-GET https://bookstack-8j1h0znbc-ericjmoliveiras-projects.vercel.app/borrowers/:id
+GET http://localhost:3000/api/borrowers/:id
 
 ###
 
-PATCH https://bookstack-8j1h0znbc-ericjmoliveiras-projects.vercel.app/borrowers/:id
+PATCH http://localhost:3000/api/borrowers/:id
 Content-Type: application/json
 
 {
@@ -121,15 +121,15 @@ Content-Type: application/json
 
 ###
 
-DELETE https://bookstack-8j1h0znbc-ericjmoliveiras-projects.vercel.app/borrowers/:id
+DELETE http://localhost:3000/api/borrowers/:id
 
 ###
 
-GET https://bookstack-8j1h0znbc-ericjmoliveiras-projects.vercel.app/transactions
+GET http://localhost:3000/api/transactions
 
 ###
 
-POST https://bookstack-8j1h0znbc-ericjmoliveiras-projects.vercel.app/transactions
+POST http://localhost:3000/api/transactions
 Content-Type: application/json
 
 {
@@ -140,11 +140,11 @@ Content-Type: application/json
 
 ###
 
-GET https://bookstack-8j1h0znbc-ericjmoliveiras-projects.vercel.app/transactions/:id
+GET http://localhost:3000/api/transactions/:id
 
 ###
 
-PATCH https://bookstack-8j1h0znbc-ericjmoliveiras-projects.vercel.app/transactions/:id
+PATCH http://localhost:3000/api/transactions/:id
 Content-Type: application/json
 
 {
@@ -153,4 +153,4 @@ Content-Type: application/json
 
 ###
 
-DELETE https://bookstack-8j1h0znbc-ericjmoliveiras-projects.vercel.app/transactions/:id
+DELETE http://localhost:3000/api/transactions/:id
