@@ -1,3 +1,5 @@
+### Create an author
+
 POST http://localhost:3000/api/authors
 Content-Type: application/json
 
@@ -5,15 +7,15 @@ Content-Type: application/json
   "name": ""
 }
 
-### 
+### Find all authors 
 
 GET http://localhost:3000/api/authors
 
-###
+### Find an author by ID
 
 GET http://localhost:3000/api/authors/:id
 
-###
+### Updaet an author
 
 PATCH http://localhost:3000/api/authors/:id
 Content-Type: application/json
@@ -22,11 +24,11 @@ Content-Type: application/json
   "name": ""
 }
 
-###
+### Delete an author
 
 DELETE http://localhost:3000/api/authors/:id
 
-###
+### Create a genre
 
 POST http://localhost:3000/api/genres
 Content-Type: application/json
@@ -35,15 +37,15 @@ Content-Type: application/json
   "name": ""
 }
 
-### 
+### Find all genres
 
 GET http://localhost:3000/api/genres
 
-###
+### Find a genre by ID
 
 GET http://localhost:3000/api/genres/:id
 
-###
+### Update a genre
 
 PATCH http://localhost:3000/api/genres/:id
 Content-Type: application/json
@@ -52,15 +54,15 @@ Content-Type: application/json
   "name": ""
 }
 
-###
+### Delete a genre
 
 DELETE http://localhost:3000/api/genres/:id
 
-###
+### Get all books
 
 GET http://localhost:3000/api/books
 
-###
+### Create a book
 
 POST http://localhost:3000/api/books
 Content-Type: application/json
@@ -74,29 +76,28 @@ Content-Type: application/json
   "availableCopies": 100
 }
 
-###
+### Find a book by ID
 
-GET http://localhost:3000/api/books/f2592e8b-87ce-491b-aa77-6dc832ec0818
+GET http://localhost:3000/api/books/:id
 
+### Update a book
 
-###
-
-PATCH http://localhost:3000/api/books/f2592e8b-87ce-491b-aa77-6dc832ec0818
+PATCH http://localhost:3000/api/books/:id
 Content-Type: application/json
 
 {
   "title": ""
 }
 
-###
+### Delete a book
 
-DELETE http://localhost:3000/api/books/f2592e8b-87ce-491b-aa77-6dc832ec0818
+DELETE http://localhost:3000/api/books/:id
 
-###
+### Find all borrowers
 
 GET http://localhost:3000/api/borrowers
 
-###
+### Create a borrower
 
 POST http://localhost:3000/api/borrowers
 Content-Type: application/json
@@ -106,28 +107,28 @@ Content-Type: application/json
   "email": ""
 }
 
-###
+### Find a borrower by ID
 
 GET http://localhost:3000/api/borrowers/:id
 
-###
+### Update a borrower
 
 PATCH http://localhost:3000/api/borrowers/:id
 Content-Type: application/json
 
 {
-  
+  "name": ""
 }
 
-###
+### Delete a borrower
 
 DELETE http://localhost:3000/api/borrowers/:id
 
-###
+### Find all transactions
 
 GET http://localhost:3000/api/transactions
 
-###
+### Create a transaction
 
 POST http://localhost:3000/api/transactions
 Content-Type: application/json
@@ -135,22 +136,22 @@ Content-Type: application/json
 {
   "bookId": "",
   "borrowerId": "",
-  "borrowPeriod": 7
+  "borrowPeriod": 7 // Period of borrowing in days
 }
 
-###
+### Find a transaction by ID
 
 GET http://localhost:3000/api/transactions/:id
 
-###
+### Update an transaction
 
 PATCH http://localhost:3000/api/transactions/:id
 Content-Type: application/json
 
 {
-  "returnDate": ""
+  "returnDate": "" // yyyy-mm-dd date format
 }
 
-###
+### Delete an transaction
 
 DELETE http://localhost:3000/api/transactions/:id
